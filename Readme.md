@@ -42,3 +42,5 @@ DEPLOYMENT:
 - `kubectl apply -f nginx-deployment.yaml` # Apply configuration from a YAML file
 - `kubectl delete deployment nginx-depl` # Delete a specific deployment
 - `kubectl expose deployment nginx-depl --type=NodePort --port=80` # Expose a deployment as a NodePort service
+- `kubectl apply -f .` # Apply configuration from the current directory
+- `minikube service <service-name>` # Access the service in the browser
