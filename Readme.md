@@ -44,3 +44,18 @@ DEPLOYMENT:
 - `kubectl expose deployment nginx-depl --type=NodePort --port=80` # Expose a deployment as a NodePort service
 - `kubectl apply -f .` # Apply configuration from the current directory
 - `minikube service <service-name>` # Access the service in the browser
+
+# Helm Important Commands
+
+=======================================================
+
+- `helm version` # Check Helm version
+- `helm repo add stable https://charts.helm.sh/stable` # Add the stable Helm chart repository
+
+- `helm repo update` # Update Helm chart repositories
+- `helm install <release-name> stable/<chart-name>` # Install a Helm chart
+- `helm list` # List all Helm releases
+- `helm uninstall <release-name>` # Uninstall a Helm release
+- `helm upgrade <release-name> stable/<chart-name>` # Upgrade a Helm release
+- `helm search repo <chart-name>` # Search for a Helm chart in the repositorie
+- `helm ls --all-namespaces` # List all Helm releases across all namespaces
